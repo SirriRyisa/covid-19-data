@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [Sirrri Ryisa](https://github.com/SirriRyisa)
 - Twitter: [Sirri Ryisa](https://twitter.com/n_ryisa)
-- LinkedIn: [Tarikwa Tesfa](https://www.linkedin.com/in/sirri-ngwa-ryisa/)
+- LinkedIn: [Sirri Ryisa](https://www.linkedin.com/in/sirri-ngwa-ryisa/)
 
 ## Acknowledgments
 
