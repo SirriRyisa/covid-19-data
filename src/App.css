@@ -1,38 +1,151 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+.container {
+  background-color: #8d6574;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.display {
+  display: flex;
+}
+
+.container {
+  background-color: #53373f;
+}
+
+.country {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search {
+  height: 30px;
+  display: flex;
+  margin: 20px 70px;
+  border: 1px solid #53373f;
+  padding: 5px;
+}
+
+.search-input {
+  background-color: white;
+  margin-left: 10px;
+  outline: none;
+  padding: 3px 7px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+}
+
+div.countries {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+a.countries {
+  width: 45%;
+  border: 1px solid #976478;
+  border-radius: 1px;
+  padding: 3rem 2rem 3rem 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+a.countries:nth-child(4n+1) {
+  background-color: #81475e;
+}
+
+a.countries:nth-child(4n+4) {
+  background-color: #81475e;
+}
+
+h2.ea-country {
+  font-size: 1rem;
+}
+
+.country-name {
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+}
+
+.main-content {
+  display: flex;
+}
+
+.back-icon {
+  color: white;
+  font-size: 20px;
+}
+
+.header-icons {
+  margin-right: 20px;
+}
+
+.mic-icon {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 14rem;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+@media screen and (max-width: 969px) {
+  .info {
+    background-color: #81475e;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 1rem;
+  }
+
+  p.info {
+    margin-right: 4rem;
+  }
+}
+
+.info-covid {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  color: white;
+  background-color: #855064;
+  padding: 20px 40px;
+}
+
+.country-info {
+  color: white;
+  font-weight: bold;
+  padding: 5px 20px;
+}
+
+.country-search {
+  color: #fff;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li:nth-child(odd) {
+  background-color: #7c4a5d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left,
+.right {
+  font-size: 1.2rem;
+  background-color: transparent;
 }
