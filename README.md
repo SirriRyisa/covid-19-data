@@ -4,11 +4,9 @@ This is a React module capstone project. It is built with react and redux by usi
 This application shows the statistics of covid cases in various countries.
 ## Screenshot
 
-![screenshot]()
-
 ## Live Demo
 
-[Live Link]()
+[Live Link](https://sirriryisa.github.io/covid-19-data/)
 
 [Video Presentation Link]()
 
@@ -28,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author
 
-👤 **Tarikwa Tesfa**
+👤 **Sirri Ryisa**
 
 - GitHub: [Sirrri Ryisa](https://github.com/SirriRyisa)
 - Twitter: [Sirri Ryisa](https://twitter.com/n_ryisa)
