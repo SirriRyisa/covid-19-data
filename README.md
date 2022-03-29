@@ -8,7 +8,7 @@ This application shows the statistics of covid cases in various countries.
 
 ## Live Demo
 
-[Live Link](https://sirriryisa.github.io/covid-19-data/)
+[Live Link](https://covid-19-api-data.herokuapp.com/)
 
 [Video Presentation Link](https://www.loom.com/share/ff960555d6474dff94ae12c37fc34e7c)
 
@@ -22,7 +22,8 @@ This application shows the statistics of covid cases in various countries.
 
 To get a local copy up and running follow these simple example steps.
 
-- Clone the repository by running git clone
+- Clone the repository by copying the repo from GitHub
+- Open [roject using any text editor of your choice
 - Install packages by running `npm install`
 - Run the app by running `npm start`
 
