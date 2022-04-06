@@ -16,7 +16,7 @@ This application shows the statistics of covid cases in various countries.
 
 - React
 - Redux
-- Jes
+- Jest
 
 ## Getting Started
 

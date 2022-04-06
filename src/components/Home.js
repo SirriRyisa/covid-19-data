@@ -3,14 +3,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import Navbar from './Navbar/Navbar';
 import Hero from './Hero/Hero';
 import ItemsCard from './ItemsCard';
-import { CountriesData } from '../redux/Data/CovidData';
+import { CountriesStatistics } from '../redux/Info/CovidInfo';
 
 const Home = () => {
-  const myData = useSelector((state) => state.dataCovid);
+  const myData = useSelector((state) => state.covidData);
   const [searchText, setSearchText] = useState('');
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(CountriesData());
+    dispatch(CountriesStatistics());
   }, [dispatch]);
 
   return (

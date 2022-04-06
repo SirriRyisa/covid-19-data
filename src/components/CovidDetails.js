@@ -3,17 +3,17 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useParams, Link } from 'react-router-dom';
 import { IoIosArrowBack, IoIosSettings } from 'react-icons/io';
 import { BsFillMicFill } from 'react-icons/bs';
-import { CountriesData } from '../redux/Data/CovidData';
+import { CountriesStatistics } from '../redux/Info/CovidInfo';
 
-const Details = () => {
+const CovidDetails = () => {
   const { id } = useParams();
   const dispatch = useDispatch();
-  const covidData = useSelector((state) => state.dataCovid);
+  const covidInfor = useSelector((state) => state.covidData);
   useEffect(() => {
-    dispatch(CountriesData());
+    dispatch(CountriesStatistics());
   }, [dispatch]);
 
-  const countryData = covidData.filter((data) => data.id === id);
+  const countryData = covidInfor.filter((data) => data.id === id);
   const CurrFlag = `https://countryflagsapi.com/png/${countryData[0].country}`;
 
   const date = new Date();
@@ -24,10 +24,10 @@ const Details = () => {
   return (
     <>
       <div className="container">
-        {covidData.length === 0 && (
-          <h3 className="wait">Loading Covid-19 Data...</h3>
+        {covidInfor.length === 0 && (
+          <h3 className="wait">Covid Data Loading...</h3>
         )}
-        {covidData.length > 0 && (
+        {covidInfor.length > 0 && (
           <>
             <div className="country-name display">
               <div className="main-content">
@@ -56,7 +56,7 @@ const Details = () => {
                 <div>
                   <p className="info">{countryData[0].country}</p>
                   <p className="info">
-                    Total Covid Case:
+                    Total Number Covid Case:
                     {' '}
                     {countryData[0].TotalConfirmed}
                   </p>
@@ -64,7 +64,7 @@ const Details = () => {
               </section>
             </div>
             <div className="country-info">
-              <p>STATS BY COUNTRY</p>
+              <p>STATISTICS BY COUNTRY</p>
             </div>
             <ul>
               <li>
@@ -72,24 +72,24 @@ const Details = () => {
                 <div className="right">{today}</div>
               </li>
               <li>
-                <span className="left">Total Confirmed:</span>
-                <div className="right">{countryData[0].TotalConfirmed}</div>
+                <span className="left">Total Confirmed cases:</span>
+                <div className="right">{countryData[0].TotalConfirmedCases}</div>
               </li>
               <li>
-                <span className="left">New Confirmed:</span>
-                <div className="right">{countryData[0].NewConfirmed}</div>
+                <span className="left">New Confirmed Cases:</span>
+                <div className="right">{countryData[0].NewConfirmedCases}</div>
               </li>
               <li>
-                <span className="left">New Recovered:</span>
-                <div className="right">{countryData[0].NewRecovered}</div>
+                <span className="left">New Recovered Cases:</span>
+                <div className="right">{countryData[0].NewRecoveredCases}</div>
               </li>
               <li>
-                <span className="left">Total Deaths:</span>
-                <div className="right">{countryData[0].TotalDeaths}</div>
+                <span className="left">Total Deaths Recorded:</span>
+                <div className="right">{countryData[0].TotalDeathsRecorded}</div>
               </li>
               <li>
-                <span className="left">New Deaths:</span>
-                <div className="right">{countryData[0].NewDeaths}</div>
+                <span className="left">New Deaths Recorded:</span>
+                <div className="right">{countryData[0].NewDeathsRecorded}</div>
               </li>
             </ul>
           </>
@@ -99,4 +99,4 @@ const Details = () => {
   );
 };
 
-export default Details;
+export default CovidDetails;
