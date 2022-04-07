@@ -29,7 +29,7 @@ To get a local copy up and running follow these simple example steps.
 
 ## Author
 
-👤 **Sirri Ryisa**
+👤 **Sirri Ngwa Ryisa**
 
 - GitHub: [Sirrri Ryisa](https://github.com/SirriRyisa)
 - Twitter: [Sirri Ryisa](https://twitter.com/n_ryisa)
