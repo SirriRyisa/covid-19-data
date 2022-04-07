@@ -1,4 +1,4 @@
-import dataCovid from '../redux/Data/CovidData';
+import covidInfo from '../redux/Info/CovidInfo';
 
 const mockStore = {
   countriesReducer: [
@@ -7,12 +7,12 @@ const mockStore = {
       Country: 'Argentina',
       CountryCode: 'AF',
       Slug: 'argentina',
-      NewConfirmed: 0,
-      TotalConfirmed: 9011367,
-      NewDeaths: 0,
-      TotalDeaths: 127599,
-      NewRecovered: 0,
-      TotalRecovered: 0,
+      NewConfirmedCases: 0,
+      TotalConfirmedCases: 9011367,
+      NewDeathsRecorded: 0,
+      TotalDeathsRecorded: 127599,
+      NewRecoveredCases: 0,
+      TotalCasesRecovered: 0,
       Premium: {},
     },
     {
@@ -20,12 +20,12 @@ const mockStore = {
       Country: 'Cyprus',
       CountryCode: 'CY',
       Slug: 'cyprus',
-      NewConfirmed: 0,
-      TotalConfirmed: 367743,
-      NewDeaths: 0,
-      TotalDeaths: 905,
-      NewRecovered: 0,
-      TotalRecovered: 0,
+      NewConfirmedCases: 0,
+      TotalConfirmedCases: 367743,
+      NewDeathsRecorded: 0,
+      TotalDeathsRecorded: 905,
+      NewRecoveredCases: 0,
+      TotalCasesRecovered: 0,
       Premium: {},
     },
   ],
@@ -33,7 +33,7 @@ const mockStore = {
 
 describe('Test', () => {
   test('Initial State', () => {
-    expect(dataCovid([], {})).toEqual([]);
+    expect(covidInfo([], {})).toEqual([]);
   });
 });
 
@@ -74,6 +74,6 @@ describe('Mock covidData Reducer', () => {
         ],
       },
     };
-    expect(dataCovid(store, action)).toEqual(action.payload);
+    expect(covidInfo(store, action)).toEqual(action.payload);
   });
 });
