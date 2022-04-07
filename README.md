@@ -2,9 +2,9 @@
 
 This is a React module capstone project. It is built with react and redux by using a public covid api.
 This application shows the statistics of covid cases in various countries.
-<!-- ## Screenshot -->
+## Screenshot
 
-<!-- ![screenshot](https://user-images.githubusercontent.com/38283436/159509800-f54c6d0c-5a1a-4126-8148-c0420d317c64.png) -->
+![screenshot](https://user-images.githubusercontent.com/38283436/159509800-f54c6d0c-5a1a-4126-8148-c0420d317c64.png)
 
 ## Live Demo
 
