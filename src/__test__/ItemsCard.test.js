@@ -8,7 +8,7 @@ describe('Test the Country list', () => {
     const country = renderer.create(
       <MemoryRouter>
         <ItemsCard className="country display" />
-        <h2 className="ea-country">Ethiopia</h2>
+        <h2 className="ea-country">Cameroon</h2>
       </MemoryRouter>,
     ).toJSON();
     expect(country).toMatchSnapshot();

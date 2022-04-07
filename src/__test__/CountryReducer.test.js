@@ -37,8 +37,8 @@ describe('Test', () => {
   });
 });
 
-describe('Mock covidData Reducer', () => {
-  test('Test covidData Reducer With Mock Data', () => {
+describe('Mock covidInfo Reducer', () => {
+  test('Test covidInfo Reducer With Mock Data', () => {
     const LOAD_DATA = 'LOAD_DATA';
     const store = mockStore;
     const action = {
